@@ -8,6 +8,24 @@ class CalculatorView extends StatefulWidget {
 }
 
 class _CalculatorViewState extends State<CalculatorView> {
+  String equation = "0";
+  String result = "0";
+  String expression = "";
+  double equationFontSize = 38.0;
+  double resultFontSize = 48.0;
+
+  buttonPressed(String buttonText){
+    // add the function here
+  }
+
+  setSate(){
+    if(buttonText == "AC"){
+      equation == "0";
+      result = "0";
+    } else if(buttonText == ""){
+      equation = equation.substring(0, equation.length - 1);
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +44,10 @@ class _CalculatorViewState extends State<CalculatorView> {
           ],
         ),
         body: SafeArea(
-          child: Column(),
+          child: Column(),// Rows
         ));
+
+    //
+
   }
 }
