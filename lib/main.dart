@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_calc/calculator_view.dart';
 
 void main(){
   runApp(const MyApp());
@@ -16,6 +17,8 @@ class MyApp extends StatefulWidget {
       ),
       debugShowCheckedModeBanner: false,
       home: const CalculatorView(),
-    )
+    );
   }
+
+
 }
